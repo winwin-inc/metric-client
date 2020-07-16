@@ -1,0 +1,42 @@
+{
+    "name": "winwin/metric-client",
+    "license": "MIT",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "ext-swoole": "*",
+        "ext-json": "*",
+        "nesbot/carbon": "^2.0",
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "kuiper/kuiper": "^0.5",
+        "mockery/mockery": "^1.3",
+        "phpunit/phpunit": "^7.0",
+        "swoft/swoole-ide-helper": "^4.4",
+        "wenbinye/tars": "^0.1",
+        "wenbinye/tars-gen": "^0.2",
+        "winwin/composer-phpcs-plugin": "^0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "winwin\\metric\\client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "winwin\\metric\\client\\": "tests/"
+        },
+        "files": ["tests/functions.php"]
+    },
+    "extra": {
+        "kuiper": {
+            "configuration": [
+                "winwin\\metric\\client\\MetricClientConfiguration"
+            ]
+        }
+    }
+}

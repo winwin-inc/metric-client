@@ -1,0 +1,13 @@
+{
+    "client": {
+        "tars_path": "tars"
+    },
+    "packages": {
+        "winwin/metric-server": {
+            "revision": "master",
+            "files": [
+                "Metric.tars"
+            ]
+        }
+    }
+}
